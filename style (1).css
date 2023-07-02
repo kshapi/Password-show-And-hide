@@ -1,0 +1,88 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  height: 400px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px 0px;
+}
+.pass-1, .pass-2 {
+  width: 300px;
+  height: 50px;
+  background: #E5E6F1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #7CF1FF;
+}
+.pass-1 .fa-lock {
+  height: 100%;
+  width: 55px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  background-color: #7CF1FF;
+}
+.pass-1 input, .pass-2 input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 40px 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.pass-1 input::placeholder,
+.pass-2 input::placeholder {
+  font-size: 17px;
+  letter-spacing: 0px;
+}
+.pass-1 .fa-eye, .pass-2 .fa-eye, 
+.pass-1 .fa-eye-slash,
+.pass-2 .fa-eye-slash {
+  height: 100%;
+  width: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  font-size: 17px;
+}
+.pass-2 {
+  height: 45px;
+  border: 2px solid gray;
+}
+.pass-2 .fa-lock {
+  height: 100%;
+  width: 60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: #fff;
+  font-size: 18px;
+}
+.pass-2 input {
+  border: none;
+}
+.pass-2.raund {
+  border-radius: 40px;
+}

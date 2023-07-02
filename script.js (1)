@@ -1,0 +1,20 @@
+const eyes = document.querySelectorAll('.fa-eye-slash');
+
+const showPass = ({target}) => {
+  const input = target.previousElementSibling;
+  
+  if (input.type == 'password') {
+    input.type = 'text';
+    target.className = 'fa-solid fa-eye';
+  }else {
+    input.type = 'password';
+    target.className = 'fa-solid fa-eye-slash';
+  };
+  
+};
+
+eyes.forEach(eye => {
+  eye.addEventListener('click', showPass);
+});
+
+//Kshapi
